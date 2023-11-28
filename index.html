@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html style="background-color: #333; font-family: sans-serif">
+  <head>
+    <link href="blyat.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style="margin-left: 10%; color: #fff">
+    <h1>METRONOMUS - мегауневирсальный девайс для измерения хуйни (метрик)</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="6">Исходные данные для расчёта указателя свойств</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>№</td>
+          <td>Характеристика</td>
+          <td>Количество</td>
+          <td>Сложность</td>
+          <td>Итого</td>
+        </tr>
+        <tr>
+          <td><p>1</p></td>
+          <td><p>Вводы</p></td>
+          <td><input id="col1" type="text" placeholder="" /></td>
+          <td><input id="hard1" type="text" placeholder="" /></td>
+          <td><p id="out1" >Итого</p></td>
+        </tr>
+        <tr>
+          <td><p>2</p></td>
+          <td><p>Выводы</p></td>
+          <td><input id="col2" type="text" placeholder="" /></td>
+          <td><input id="hard2" type="text" placeholder="" /></td>
+          <td><p id="out2" >Итого</p></td>
+        </tr>
+        <tr>
+          <td><p>3</p></td>
+          <td><p>Запросы</p></td>
+          <td><input id="col3" type="text" placeholder="" /></td>
+          <td><input id="hard3" type="text" placeholder="" /></td>
+          <td><p id="out3" >Итого</p></td>
+        </tr>
+        <tr>
+          <td><p>4</p></td>
+          <td><p>Логические файлы</p></td>
+          <td><input id="col4" type="text" placeholder="" /></td>
+          <td><input id="hard4" type="text" placeholder="" /></td>
+          <td><p id="out4" >Итого</p></td>
+        </tr>
+        <tr>
+          <td><p>5</p></td>
+          <td><p>Интерфейсные файлы</p></td>
+          <td><input id="col5" type="text" placeholder="" /></td>
+          <td><input id="hard5" type="text" placeholder="" /></td>
+          <td><p id="out5" >Итого</p></td>
+        </tr>
+        <tr>
+          <td><p>6</p></td>
+          <td><p>Кол-во алгоритмов</p></td>
+          <td><input id="col6" type="text" placeholder="" /></td>
+          <td><input id="hard6" type="text" placeholder="" /></td>
+          <td><p id="out6" >Итого</p></td>
+        </tr>
+      </tbody>
+    </table>
+    <button id="bigBlyatButton">КАЛЬКУЛЕЙТ</button>
+    <p>
+      FP = Общее количество * (0,65 + 0,01 * ∑i=114 Fi),<br>      
+      где Fi – коэффициенты регулировки сложности.<br>
+      Каждый коэффициент может принимать следующие значения: 0 – нет влияния, 1 – случайное, 2 – небольшое, 3 – среднее, 4 – важное, 5 – основное.<br>
+      Значения выбираются эмпирически в результате ответа на 14 вопросов, которые характеризуют системные параметры приложения (таблица 4).
+    </p>
+  </body>
+  <script src="suka.js"></script>
+</html>
